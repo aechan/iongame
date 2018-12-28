@@ -1,0 +1,15 @@
+{
+  "name": "iongame",
+  "version": "1.0.0",
+  "description": "Game engine targeting ionic framework apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alec Chan",
+  "license": "ISC",
+  "dependencies": {
+    "@types/sha1": "^1.1.1",
+    "sha1": "^1.1.1"
+  }
+}
