@@ -1,7 +1,7 @@
 import sha1 from 'sha1';
-import { Entity } from './Entity';
+import { Entity } from '../entity/Entity';
 
-export class Component {
+export abstract class Component {
     private entity: Entity;
 
     constructor() {
@@ -19,7 +19,5 @@ export class Component {
     /**
      * Called every tick.
      */
-    public update() {
-
-    }
+    public abstract update();
 }

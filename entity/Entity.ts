@@ -1,9 +1,12 @@
-import { Component } from './Component';
+import { Component } from '../component/Component';
+import { Game } from '../Game';
 
 export class Entity {
     private components: Component[];
+    private game: Game;
 
-    constructor() {
+    constructor(game: Game) {
+        this.game = game;
         this.components = [];
     }
 
@@ -61,5 +64,9 @@ export class Entity {
         return this.components.filter((component) => {
             component instanceof componentType;
         });
+    }
+
+    get delta(): number {
+        return this.game.getCurrentDelta;
     }
 }
